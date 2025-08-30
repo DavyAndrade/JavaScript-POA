@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consulte seu CEP</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main>
+    <section class="content">
+      <h1 class="content__title">Consulta CEP</h1>
+      <p class="content__subtitle">Digite seu CEP para consultar seu endereço</p>
+
+      <article class="content__card">
+        <form class="content__form" id="cep-form">
+          <div class="content__input-group">
+            <label for="cep" class="content__label">CEP</label>
+            <input type="text" id="cep" placeholder="00000-000" class="content__input" />
+          </div>
+          <button class="content__button" onclick="consulta()" type="submit">Consultar</button>
+        </form>
+
+        <div id="resultado" class="content__result"></div>
+      </article>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
